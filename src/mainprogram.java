@@ -16,6 +16,23 @@ public class mainprogram {
         System.out.println(obj2.integer1);
       }
 
+      // Switch Statement
+      switch (obj2.integer1) {
+        case 9:
+          System.out.println("Item is 9");
+          
+          break;
+
+        case 20:
+          System.out.println("Item is 20");
+          
+          break;
+      
+        default:
+          System.out.println("Item is neither 9 or 20");
+          break;
+      }
+
       // Prints the attributes of HelloWorld class & Numbers class
       System.out.println(obj.text);
       
