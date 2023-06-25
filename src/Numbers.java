@@ -12,8 +12,12 @@ public class Numbers {
         return this.integer2;
     }
 
+    public void add_to_integer1(int value){
+        this.integer1 = this.integer1 + value;
+    }
+
     public void add_one_to_int_one (){
-        this.integer1 = this.integer1 + 1;
+        this.integer1 += 1;
     
   }
 }

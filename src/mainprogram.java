@@ -16,6 +16,12 @@ public class mainprogram {
         System.out.println(obj2.integer1);
       }
 
+      // using arguments in methods & using 
+      int value_to_add = 99;
+      System.out.printf("Integer 1 before addition: %d%n",obj2.integer1);
+      obj2.add_to_integer1(value_to_add);
+      System.out.printf("Integer 1 after adding %d: %d%n",value_to_add, obj2.integer1);
+
       // Switch Statement
       switch (obj2.integer1) {
         case 9:
