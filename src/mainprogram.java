@@ -51,5 +51,10 @@ public class mainprogram {
       // Class Constructor Overloading - Under Student.java
       Student james = new Student("james", "1996-12-08", 1234);
       System.out.printf("A new Student record has been created with name: %s, ID: %d, Date of Birth: %s, Age: %d",james.name, james.ID, james.dob, james.age);
+
+      System.out.println("");
+
+      Student john = new Student("john");
+      System.out.printf("A new Student record has been created with name: %s",john.name);
     }
 } 
