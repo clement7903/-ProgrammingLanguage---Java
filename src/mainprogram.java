@@ -1,5 +1,7 @@
 package src;
 
+import java.util.Scanner;
+
 public class mainprogram {
 
   public static void main (String args[])
@@ -49,12 +51,21 @@ public class mainprogram {
       }
 
       // Class Constructor Overloading - Under Student.java
+      System.out.println("---------------------------------------- Class constructor overloading");
+
       Student james = new Student("james", "1996-12-08", 1234);
       System.out.printf("A new Student record has been created with name: %s, ID: %d, Date of Birth: %s, Age: %d",james.name, james.ID, james.dob, james.age);
 
-      System.out.println("");
+      
 
       Student john = new Student("john");
       System.out.printf("A new Student record has been created with name: %s",john.name);
+
+      System.out.println(" ");
+
+      // adding in command line arguments
+      System.out.println("---------------------------------------- Command line arguments");
+      Scanner input = new Scanner(System.in); //read keyboard input
+      System.out.println(input.nextLine());
     }
 } 
