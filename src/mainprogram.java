@@ -95,5 +95,20 @@ public class mainprogram {
       }
       double averageHighs2 = highsSum / weekHigh.length;
       System.out.println("Average is: " + averageHighs2);
+
+      // searching within sparse Array, using short-circuit condition to skip evaluation of 2nd condition
+      String[] concepts = new String[5];
+        concepts[0] = "abstraction";
+        concepts[2] = "polymorphism";
+        concepts[3] = "inheritance";
+        concepts[4] = "encapsulation";
+        String result = "not found";
+        for (String concept : concepts ) {
+            if ((concept != null) && (concept.equals("polymorphism"))) { // when 1st condition is met --> skip evaluation of .equals() method
+                result = "found";
+                break;
+            }
+        }
+        System.out.println(result);
     }
 } 
