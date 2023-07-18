@@ -80,8 +80,18 @@ public class mainprogram {
       // Java Arrays
       double[] weekHigh = {80, 60, 75, 69, 72 ,74, 90};
       double highsSum = 0;
+
+      // adding up element of an Array using for loop + index (not the best method because there's a chance to get index wrong)
       for (int index =0; index < weekHigh.length; index ++){
         highsSum = highsSum + weekHigh[index];
+      }
+      double averageHighs = highsSum / weekHigh.length;
+      System.out.println("Average is: " + averageHighs);
+
+      // using a for-each statement to loop
+      // for (arrayType element_name : array_name)
+      for (double dayHigh: weekHigh){
+        highsSum = highsSum + dayHigh;
       }
       double averageHighs = highsSum / weekHigh.length;
       System.out.println("Average is: " + averageHighs);
