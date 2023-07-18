@@ -65,7 +65,25 @@ public class mainprogram {
 
       // adding in command line arguments
       System.out.println("---------------------------------------- Command line arguments");
-      Scanner input = new Scanner(System.in); //read keyboard input
-      System.out.println(input.nextLine());
+      // Scanner input = new Scanner(System.in); //read keyboard input
+      // System.out.println(input.nextLine());
+
+      // break and continue statements
+      System.out.println("---------------------------------------- Break and Continue Statements");
+      for (int i = 0; i < 20; i++){
+        if (i == 10){
+          continue;
+        }
+        System.out.println(i);
+      }
+
+      // Java Arrays
+      double[] weekHigh = {80, 60, 75, 69, 72 ,74, 90};
+      double highsSum = 0;
+      for (int index =0; index < weekHigh.length; index ++){
+        highsSum = highsSum + weekHigh[index];
+      }
+      double averageHighs = highsSum / weekHigh.length;
+      System.out.println("Average is: " + averageHighs);
     }
 } 
