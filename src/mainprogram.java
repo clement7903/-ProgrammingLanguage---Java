@@ -93,7 +93,7 @@ public class mainprogram {
       for (double dayHigh: weekHigh){
         highsSum = highsSum + dayHigh;
       }
-      double averageHighs = highsSum / weekHigh.length;
-      System.out.println("Average is: " + averageHighs);
+      double averageHighs2 = highsSum / weekHigh.length;
+      System.out.println("Average is: " + averageHighs2);
     }
 } 
