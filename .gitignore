@@ -1,0 +1,5 @@
+# Ignore all class files
+*.class
+
+# Optionally, ignore all compiled Java files in all directories
+**/*.class
