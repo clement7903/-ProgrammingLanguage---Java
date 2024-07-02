@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Dog extends Canine { // inherits the 
+public class Dog extends Canine { // inherits the super class Canine
     protected String name;
 
     public Dog(String name, double size){
@@ -14,6 +14,6 @@ public class Dog extends Canine { // inherits the
         System.out.println("Return");
     }
 
-    // just to 
+    // just to override the abstract method - this is needed because it is a child class of a parent abstract class
     public void groom(){}
 }
